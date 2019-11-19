@@ -27,6 +27,7 @@ namespace Test
 
         public void Save_test(Test test_) {
             BinaryFormatter bf = new BinaryFormatter();
+            filePath = Environment.CurrentDirectory + "test.dts";
             FileStream fs = new FileStream(filePath, FileMode.Create);
             Save save = new Save();
 

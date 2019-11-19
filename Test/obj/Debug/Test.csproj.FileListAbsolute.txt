@@ -18,3 +18,4 @@ E:\5_1\TEST_SYSTEM\Test\obj\Debug\Test.csproj.GenerateResource.cache
 E:\5_1\TEST_SYSTEM\Test\obj\Debug\Test.csproj.CoreCompileInputs.cache
 E:\5_1\TEST_SYSTEM\Test\obj\Debug\Test.exe
 E:\5_1\TEST_SYSTEM\Test\obj\Debug\Test.pdb
+E:\5_1\TEST_SYSTEM\Test\obj\Debug\Test.Start.resources
