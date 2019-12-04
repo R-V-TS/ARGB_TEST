@@ -33,20 +33,37 @@ namespace Test
             count_grade = count_grade_;
         }
 
+        public int getAllQuestionCount()
+        {
+            return numb_of_all_quest;
+        }
+
+        public Question getQuestion(int id)
+        {
+            return (Question)answerarray[id];
+        }
+
+        public int getQuestionCount()
+        {
+            return number_of_quest;
+        }
+
         public override String ToString()
         {
             String time_test_str = "";
-            time_test_str += numb_of_all_quest.ToString() + " | " + max_of_grad.ToString() + " | " + " | " + number_of_quest.ToString() + " | " + count_grade.ToString() + " | " + time_for_test.ToString() + " | " + time_for_question.ToString() +  " | ";
+            time_test_str += numb_of_all_quest.ToString() + "|" + max_of_grad.ToString() + "|" + number_of_quest.ToString() + "|" + count_grade.ToString() + "|" + time_for_test.ToString() + "|" + time_for_question.ToString() +  "|";
             foreach(int l in gradearray)
             {
-                time_test_str += l.ToString() + " | ";
+                time_test_str += l.ToString() + "|";
             }
-            time_test_str += "\n";
+            time_test_str += "";
             foreach(object k in answerarray)
             {
-                time_test_str += ((Question)k).ToString() + " | \n";
+                time_test_str += ((Question)k).ToString() + "|";
             }
             return time_test_str;
         }
+
+
     }
 }

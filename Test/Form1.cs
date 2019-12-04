@@ -457,6 +457,8 @@ namespace Test
         private void Button6_Click(object sender, EventArgs e)
         {
             Test test = new Test(test_question, questions2test, all_graduate, ques_graduate_setup, test_time, question_time, all_question, test_graduate);
+            TestSaver saver = new TestSaver();
+            saver.Save_test(test);
             System.Diagnostics.Debug.WriteLine(test.ToString());
         }
 

@@ -106,8 +106,9 @@
             // darkToolStripMenuItem
             // 
             this.darkToolStripMenuItem.Name = "darkToolStripMenuItem";
-            this.darkToolStripMenuItem.Size = new System.Drawing.Size(98, 22);
+            this.darkToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.darkToolStripMenuItem.Text = "Dark";
+            this.darkToolStripMenuItem.Click += new System.EventHandler(this.DarkToolStripMenuItem_Click);
             // 
             // adminToolStripMenuItem
             // 
@@ -161,7 +162,7 @@
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.button1.Location = new System.Drawing.Point(339, 292);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(121, 23);
+            this.button1.Size = new System.Drawing.Size(121, 34);
             this.button1.TabIndex = 2;
             this.button1.Text = "Далее";
             this.button1.UseVisualStyleBackColor = true;
@@ -195,6 +196,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(280, 26);
             this.textBox1.TabIndex = 5;
+            this.textBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TextBox1_KeyPress);
             // 
             // textBox2
             // 
@@ -243,10 +245,12 @@
             this.button3.TabIndex = 10;
             this.button3.Text = "Начать выполнение";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.TextChanged += new System.EventHandler(this.Button3_TextChanged);
             this.button3.Click += new System.EventHandler(this.Button3_Click);
             // 
             // textBox3
             // 
+            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBox3.Location = new System.Drawing.Point(242, 209);
             this.textBox3.Multiline = true;
             this.textBox3.Name = "textBox3";
@@ -272,7 +276,6 @@
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Start";
-            this.Text = "Start";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
